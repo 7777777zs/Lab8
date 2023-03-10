@@ -48,25 +48,25 @@ public class CustomListTest {
         assertTrue(cityList.hasCity(city1));
         assertFalse(cityList.hasCity(city2));
     }
-//    @Test
-//    void testDelete() {
-//        CustomList cityList = mockCityList();
-//        City city1 = new City("Charlottetown", "Prince Edward Island");
-//        cityList.addCity(city1);
-//        City city2 = new City("Yellowknife", "Northwest Territories");
-//        cityList.addCity(city2);
-//        cityList.deleteCity(city1);
-//        assertFalse(cityList.hasCity(city1));
-//        cityList.deleteCity(city2);
-//        assertFalse(cityList.hasCity(city2));
-//    }
-//    @Test
-//    void testDeleteException() {
-//        CustomList cityList = mockCityList();
-//        City city = new City("Yellowknife", "Northwest Territories");
-//        assertThrows( IllegalArgumentException.class, () -> {
-//            cityList.deleteCity(city); });
-//    }
+    @Test
+    void testDelete() {
+        CustomList cityList = mockCityList();
+        City city1 = new City("Charlottetown", "Prince Edward Island");
+        cityList.addCity(city1);
+        City city2 = new City("Yellowknife", "Northwest Territories");
+        cityList.addCity(city2);
+        cityList.deleteCity(city1);
+        assertFalse(cityList.hasCity(city1));
+        cityList.deleteCity(city2);
+        assertFalse(cityList.hasCity(city2));
+    }
+    @Test
+    void testDeleteException() {
+        CustomList cityList = mockCityList();
+        City city = new City("Yellowknife", "Northwest Territories");
+        assertThrows( IllegalArgumentException.class, () -> {
+            cityList.deleteCity(city); });
+    }
 //    @Test
 //    void testCount() {
 //        CustomList cityList = mockCityList();
