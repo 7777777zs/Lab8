@@ -69,7 +69,8 @@ public class CustomList extends ArrayAdapter<City> {
      * Return whether or not the city belongs in the list
      */
     public boolean hasCity(City city) {
-        return cities.contains(city);
+//        return cities.contains(city);
+        return false;
     }
 
     /**
@@ -78,11 +79,11 @@ public class CustomList extends ArrayAdapter<City> {
      * This is a candidate city to delete
      */
     public void deleteCity(City city) {
-        if (!cities.contains(city)) {
-            throw new IllegalArgumentException(("City not found in the list!"));
-        }else {
-            cities.remove(city);
-        }
+//        if (!cities.contains(city)) {
+//            throw new IllegalArgumentException(("City not found in the list!"));
+//        }else {
+//            cities.remove(city);
+//        }
     }
 
     /**
@@ -91,6 +92,7 @@ public class CustomList extends ArrayAdapter<City> {
      * Return how many cities are in the list
      */
     public int countCities() {
-        return cities.size();
+//        return cities.size();
+        return 0;
     }
 }
