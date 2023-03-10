@@ -55,10 +55,10 @@ public class CustomList extends ArrayAdapter<City> {
      * This is a candidate city to add
      */
     public void addCity(City city){
-//        if (cities.contains(city)) {
-//            throw new IllegalArgumentException();
-//        }
-//        cities.add(city);
+        if (cities.contains(city)) {
+            throw new IllegalArgumentException();
+        }
+        cities.add(city);
     }
 
     /**
